@@ -14,10 +14,18 @@ body {
     font-family: 'Nunito', regular;
 }
 
+/* @media screen and (max-height:960px) {
+    .pfp {
+        border-radius: 100%;
+        width: 40%;
+        height: 40%;
+    }   
+} */
+
 .pfp {
     border-radius: 100%;
-    width: 20%;
-    height: 20%;
+    width: 200px;
+    height: 200px;
 }
 
 h1 {
@@ -31,16 +39,14 @@ h2 {
 }
 
 .container {
-    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
     margin: 0 auto;
     padding: 0 3rem;
     margin-top: 4rem;
     text-align: center;
     color: white;
-}
-
-.buttons {
-    justify-items: auto;
 }
 
 .link {
