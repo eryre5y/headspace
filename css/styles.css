@@ -137,3 +137,11 @@ h2 {
     box-shadow: 0 0 0 0 rgba(168,0,255,0);
     background-position: 0 0;
 }
+
+.heart {
+    font-size: 40px;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    10% { transform: scale(1.2); }
+}
