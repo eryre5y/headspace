@@ -1,16 +1,65 @@
-/* * {
-    margin: 3;
-    padding: 3;
-    box-sizing: border-box;
-} */
+html {
+    overflow: hidden;
+}
+
+/* Styling the meteor + meteor.js */
+.animated-area .meteor {
+    z-index: -9;
+	position: absolute;
+	top: 0;
+	/* width - height in meteor.js */
+	background-image: linear-gradient(to bottom, transparent, rgb(128, 128, 128));
+	animation: shower 3s linear infinite;
+	/* box-shadow: 0 1px 1px 1px rgba(138, 138, 138, 0.596); */
+}
+
+@keyframes shower {
+	from {
+		transform: translateY(-50%);
+		transform: rotate(50deg);
+	}
+	to {
+		transform: translateY(500%);
+		left: 0px;
+		top: 130%;
+		transform: rotate(55deg);
+	}
+}
+
+/* Styling the stars + stars.js */
+
+.animated-area .star {
+	background: #fff;
+	position: absolute;
+	border-radius: 50%;
+	z-index: -10;
+	box-shadow: 0 10px 20px 1px rgba(255, 255, 255, 0.596);
+	animation: animate linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	10%,
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
 
 body {
-    background: #ffffff;
-    background-image: url('../images/background.jpg');
+    background: black;
+    /* background-image: url('../images/background.jpg');
     background-position: 100%;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
 }
 
 .desc {
@@ -31,6 +80,10 @@ body {
     height: 200px;
 }
 
+span {
+    color: white;
+}
+
 h1 {
     font-family: 'Nunito', bold;
     font-size: 40px;
@@ -38,10 +91,12 @@ h1 {
 }
 h2 {
     font-family: 'Nunito', regular;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .container {
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     max-width: auto;
