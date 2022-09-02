@@ -91,10 +91,12 @@ h1 {
     font-family: 'Nunito', bold;
     font-size: 40px;
     margin-bottom: -10px;
+    transition-duration: .5s;
 }
 h2 {
     font-family: 'Nunito', regular;
     font-size: 20px;
+    transition-duration: .5s;
 }
 
 .container {
@@ -149,6 +151,19 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+
+    html {
+        overflow: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
     .container {
         max-width: 200px;
     }
@@ -162,5 +177,6 @@ h2 {
     .link {
         padding: 6px 40px;
         width: 50px;
+        box-shadow: 0 8px 16px 0 rgba(168,0,255,.35);
     }
 }
