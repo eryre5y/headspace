@@ -146,8 +146,50 @@ h2 {
     font-size: 40px;
     animation: pulse 1s infinite;
 }
+
+#timer {
+    color: white;
+    font-size: 30px;
+    font-family: 'Nunito', regular;
+    transition-duration: 1s;
+}
+
 @keyframes pulse {
     10% { transform: scale(1.2); }
+}
+
+@media only screen and (max-height: 600px) {
+    html {
+        overflow: auto;
+    }
+
+    #timer {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .container {
+        max-width: auto;
+    }
+
+    .pfp {
+        border-radius: 100%;
+        width: 125px;
+        height: 125px;
+    }
+
+    .link {
+        padding: 6px 40px;
+        width: 50px;
+        box-shadow: 0 8px 16px 0 rgba(168,0,255,.35);
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,6 +198,10 @@ h2 {
         overflow: auto;
     }
 
+    #timer {
+        font-size: 20px;
+    }
+    
     h1 {
         font-size: 30px;
     }
