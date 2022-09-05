@@ -68,6 +68,7 @@ ul:hover {
     width: 500px;
 
     animation: fadeIn 1s;
+    transition-duration: .5s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -85,4 +86,17 @@ h1 {
 h2 {
     font-family: 'nunito', regular;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        margin-top: 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    html {
+        overflow: auto;
+    }
 }
