@@ -16,7 +16,7 @@ body {
 .bg-image {
     z-index: -10;
     position: fixed;
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.webp");
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
