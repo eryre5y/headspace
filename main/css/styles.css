@@ -99,4 +99,9 @@ h2 {
     html {
         overflow: auto;
     }
+
+    .welcome {
+        position: absolute;
+        margin-left: 30%;
+    }
 }
