@@ -34,6 +34,7 @@ ul {
     overflow: hidden;
     border-radius: 10px;
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     font-family: 'Nunito', regular;
 }
 li {
@@ -54,6 +55,7 @@ li a:hover {
 
 .welcome {
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     
     display: table;
     margin: 15% auto 0px auto;
