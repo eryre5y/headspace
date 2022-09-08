@@ -15,7 +15,7 @@ body {
 
 .bg-image {
     z-index: -10;
-    position: fixed;
+    position: absolute;
     background-image: url("../images/bg.webp");
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -58,8 +58,8 @@ ul:hover {
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     
+    margin: 15% auto;
     display: table;
-    margin: 15% auto 0px auto;
     padding: 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -90,18 +90,17 @@ h2 {
 
 @media only screen and (max-width: 600px) {
     .welcome {
-        margin-top: 50%;
+        margin: 50% auto 50% auto;
         width: 100%;
     }
 }
 
 @media only screen and (max-height: 600px) {
-    html {
+    html, body {
         overflow: auto;
     }
 
     .welcome {
-        position: absolute;
-        margin-left: 30%;
+        margin: 5% auto;
     }
 }
